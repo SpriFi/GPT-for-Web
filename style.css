@@ -1,0 +1,72 @@
+//Note that we'll be using several !important tags in this file to override Bootstrap styles at some places for a unified and modern look which is completely usual.
+
+body {
+      background: #001a3f !important; //dark bg default, change it according to your needs.
+    }
+    .container {
+      max-width: 100%;
+    }
+    #chatbox {
+      display: flex;
+      flex-direction: column;
+    }
+    .assistant-message {
+      align-self: flex-start;
+      background-color: #ffffff1a;
+      color: #fff;
+      padding: 10px;
+      overflow: auto;
+      border-radius: 0px 25px 25px 25px;
+    }
+    .user-message {
+      align-self: flex-end;
+      background-color: #ffffff1a;
+      color: #fff;
+      padding: 10px 10px 0px 10px;
+      overflow: auto;
+      border-radius: 25px 0px 25px 25px;
+      margin: 10px 0;
+    }
+    .typing-indicator {
+      align-self: center;
+      background-color: #ffffff1a;
+      color: #fff;
+      padding: 10px;
+      overflow: auto;
+      border-radius: 15px 15px 15px 15px;
+    }
+    .typing-indicator::after {
+      content: "";
+      animation: typing 1s infinite;
+    }
+    .form-control {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border: 0px solid red !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+    color: white !important;
+    background-color: transparent !important;
+    border-color: transparent;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+    @keyframes typing {
+      0% {content: "Typing";}
+      25% {content: "Typing.";}
+      50% {content: "Typing..";}
+      75% {content: "Typing...";}
+    }
+ 
