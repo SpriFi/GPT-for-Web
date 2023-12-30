@@ -19,6 +19,7 @@ If you acquired your free API key from https://discord.pawan.krd , then change t
 
 	If you are using the official OpenAI API key from [openai.com](http://openai.com "openai.com"), you need not change any part of the code. Just replace your API key in line 61 and deploy.
 4. **Deploy** on Vercel, Railway, HuggingFace.
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSpriFi%2FGPT-for-Web)
 
 ### METHOD 2
 1. Directly copy paste the HTML, CSS and JS files to your website.
